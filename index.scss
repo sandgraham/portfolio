@@ -28,15 +28,18 @@ a {
 	width: 100%;
 
 	#nav-wrap {
-
 		position: fixed;
 		left: 0;
 		top: 0;
-		width: 15em;
+		width: 300px;
 		height: 100%;
 
 		nav {
 			margin-left: 3em;
+
+			.button, .trigger {
+				cursor: pointer;
+			}
 
 			h1 {
 				font-size: 1em;
@@ -51,6 +54,7 @@ a {
 					display: none;
 					padding-left: 1em;
 					margin: 1em auto 1em auto;
+					color: #777;
 				}
 			}
 
@@ -63,8 +67,29 @@ a {
 		}
 	}
 
-	.content {
-		height: 100%;
+	.content-wrap {
+		margin-left: 15em;
+		min-width: 400px;
+
+		.content {
+			display: none;
+		}
+
+		#wb-content {
+			background-color: red;
+		}
+		#gl-content {
+			background-color: blue;
+		}
+		#fa-content {
+			background-color: green;
+		}
+		#ck12-content {
+			background-color: orange;
+		}
+		#rm-content {
+			background-color: purple;
+		}
 	}
 
 }
@@ -76,6 +101,7 @@ a {
 		height: auto;
 
 		#nav-wrap {
+			position: relative;
 			max-width: none;
 			top: 0;
 			width: 100%;
@@ -85,17 +111,25 @@ a {
 			nav {
 				margin-left: 0;
 
+				ul {
+
+					ul {
+						padding-left: 0;
+					}
+				}
+
 				.contact {
 					margin-top: 3em;
 					position: relative;
 					bottom: auto;
+					margin-bottom: 2em;
 				}
 			}
 		}
 
-		.content {
-			height: auto;
-			background-color: #ccc;
+		.content-wrap {
+			margin-left: 0;
+			min-width: 0;
 		}
 
 	}

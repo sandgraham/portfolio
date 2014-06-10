@@ -23,10 +23,12 @@ a {
     position: fixed;
     left: 0;
     top: 0;
-    width: 15em;
+    width: 300px;
     height: 100%; }
     .layout #nav-wrap nav {
       margin-left: 3em; }
+      .layout #nav-wrap nav .button, .layout #nav-wrap nav .trigger {
+        cursor: pointer; }
       .layout #nav-wrap nav h1 {
         font-size: 1em;
         margin: 3em auto 3em auto; }
@@ -36,19 +38,34 @@ a {
         .layout #nav-wrap nav ul ul {
           display: none;
           padding-left: 1em;
-          margin: 1em auto 1em auto; }
+          margin: 1em auto 1em auto;
+          color: #777; }
       .layout #nav-wrap nav .contact {
         font-size: .9em;
         color: #aaa;
         position: absolute;
         bottom: 2em; }
-  .layout .content {
-    height: 100%; }
+  .layout .content-wrap {
+    margin-left: 15em;
+    min-width: 400px; }
+    .layout .content-wrap .content {
+      display: none; }
+    .layout .content-wrap #wb-content {
+      background-color: red; }
+    .layout .content-wrap #gl-content {
+      background-color: blue; }
+    .layout .content-wrap #fa-content {
+      background-color: green; }
+    .layout .content-wrap #ck12-content {
+      background-color: orange; }
+    .layout .content-wrap #rm-content {
+      background-color: purple; }
 
 @media handheld, (max-width: 700px), (max-device-width: 900px) {
   .layout {
     height: auto; }
     .layout #nav-wrap {
+      position: relative;
       max-width: none;
       top: 0;
       width: 100%;
@@ -56,10 +73,13 @@ a {
       text-align: center; }
       .layout #nav-wrap nav {
         margin-left: 0; }
+        .layout #nav-wrap nav ul ul {
+          padding-left: 0; }
         .layout #nav-wrap nav .contact {
           margin-top: 3em;
           position: relative;
-          bottom: auto; }
-    .layout .content {
-      height: auto;
-      background-color: #ccc; } }
+          bottom: auto;
+          margin-bottom: 2em; }
+    .layout .content-wrap {
+      margin-left: 0;
+      min-width: 0; } }
