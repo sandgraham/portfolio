@@ -41,9 +41,13 @@ a {
 				cursor: pointer;
 			}
 
+			.buffer {
+				height: 3em;
+			}
+
 			h1 {
 				font-size: 1em;
-				margin: 3em auto 3em auto;
+				margin: 0 auto 3em auto;
 			}
 
 			ul {
@@ -73,22 +77,35 @@ a {
 
 		.content {
 			display: none;
+			height: 10em;
+		}
+
+		#main-content {
+			background-color: pink;
 		}
 
 		#wb-content {
 			background-color: red;
 		}
+
 		#gl-content {
 			background-color: blue;
 		}
+
 		#fa-content {
 			background-color: green;
 		}
+
 		#ck12-content {
 			background-color: orange;
 		}
+
 		#rm-content {
 			background-color: purple;
+		}
+
+		#about-content {
+			background-color: yellow;
 		}
 	}
 

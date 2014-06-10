@@ -1,5 +1,7 @@
 $(function(){
 
+	$('#main-content').show(); //This should be the initial draw
+
 	$('.trigger').click(function(e){
 		$(this).next().slideToggle();
 	});
@@ -17,5 +19,5 @@ $(function(){
 			openContent = clickedContent;
 		};
 	};
-	
+
 })
