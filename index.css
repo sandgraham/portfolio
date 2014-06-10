@@ -1,5 +1,12 @@
 /* Portfolio by/for Graham Murdoch*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html, body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   margin: 0;
   height: 100%;
   width: 100%; }
@@ -8,18 +15,52 @@ html, body {
   height: 100%;
   width: 100%; }
   .layout nav {
-    float: left;
-    max-width: 300px;
-    width: 30%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15em;
     height: 100%; }
+    .layout nav div {
+      margin: .5em 0 .5em 15%; }
+    .layout nav .link {
+      cursor: pointer; }
+    .layout nav .link:hover {
+      background-color: yellow; }
+    .layout nav .name {
+      font-size: 1.1em;
+      margin-top: 3em;
+      margin-bottom: 3em; }
+    .layout nav .contact {
+      font-size: .9em;
+      color: #aaa;
+      position: absolute;
+      width: 100%;
+      bottom: 2em; }
+      .layout nav .contact a {
+        text-decoration: none;
+        color: black; }
   .layout .content {
     height: 100%; }
 
-@media handheld, (max-width: 700px) {
-  .layout nav {
-    float: none;
-    max-width: none;
-    width: 100%;
+@media handheld, (max-width: 700px), (max-device-width: 900px) {
+  .layout {
     height: auto; }
-  .layout .content {
-    height: auto; } }
+    .layout nav {
+      max-width: none;
+      top: 0;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      border-bottom: solid 1px #ccc; }
+      .layout nav div {
+        margin-left: 0; }
+      .layout nav .name {
+        margin-bottom: 2em; }
+      .layout nav .contact {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        position: relative;
+        bottom: auto; }
+    .layout .content {
+      height: auto;
+      background-color: #ccc; } }
