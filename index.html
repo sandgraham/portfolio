@@ -3,42 +3,52 @@
 <head>
 	<title>gm( );</title>
 	<meta name="viewport" content="width=device-width" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-
 	<div class="layout">
 
+	<div id="nav-wrap">
 		<nav>
-			<div class="name">
-				<span class="link">graham murdoch</span>
-			</div>
+			<h1><a href="/">graham murdoch</a></h1>
 
-			<div class="work">
-				<span class="link">work</span>
-			</div>
+			<ul>
+				<li>
+					<a href="/" class="trigger">work</a>
+					<ul>
+						<li>weird beers</li>
+						<li>gene's liquor</li>
+						<li>fractured atlas</li>
+						<li>ck-12</li>
+					</ul>
+				</li>
+				<li>
+					<a href="/" class="trigger">experiments</a>
+					<ul>
+						<li>random maps</li>
+					</ul>
+				</li>
+				<li>
+					<a href="/">about</a>
+				</li>
+			</ul>
 
-			<div class="experiments">
-				<span class="link">experiments</span>
-			</div>
-
-			<div class="about">
-				<span class="link">about</span>
-			</div>
-
-			<div class="contact">
-				<p class="github"> github: <a target="blank" href="https://www.github.com/sandgraham">sandgraham</a></p>
-				<p class="email"> grahammurdoch@gmail.com </p>
-			</div>
+			<ul class="contact">
+				<li>github: <a target="blank" href="https://www.github.com/sandgraham">sandgraham</a></li>
+				<li>grahammurdoch8@gmail.com</li>
+			</ul>
 		</nav>
+	</div>
 
-		<div class="content">
 
-		</div>
+	<div class="content">
+	</div>
 
 
 	</div>
 
 </body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
 </html>

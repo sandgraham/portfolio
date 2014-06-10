@@ -7,60 +7,59 @@
 html, body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  font-size: 1em;
   margin: 0;
   height: 100%;
   width: 100%; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 .layout {
   height: 100%;
   width: 100%; }
-  .layout nav {
+  .layout #nav-wrap {
     position: fixed;
     left: 0;
     top: 0;
     width: 15em;
     height: 100%; }
-    .layout nav div {
-      margin: .5em 0 .5em 15%; }
-    .layout nav .link {
-      cursor: pointer; }
-    .layout nav .link:hover {
-      background-color: yellow; }
-    .layout nav .name {
-      font-size: 1.1em;
-      margin-top: 3em;
-      margin-bottom: 3em; }
-    .layout nav .contact {
-      font-size: .9em;
-      color: #aaa;
-      position: absolute;
-      width: 100%;
-      bottom: 2em; }
-      .layout nav .contact a {
-        text-decoration: none;
-        color: black; }
+    .layout #nav-wrap nav {
+      margin-left: 3em; }
+      .layout #nav-wrap nav h1 {
+        font-size: 1em;
+        margin: 3em auto 3em auto; }
+      .layout #nav-wrap nav ul {
+        list-style: none;
+        padding: 0; }
+        .layout #nav-wrap nav ul ul {
+          display: none;
+          padding-left: 1em;
+          margin: 1em auto 1em auto; }
+      .layout #nav-wrap nav .contact {
+        font-size: .9em;
+        color: #aaa;
+        position: absolute;
+        bottom: 2em; }
   .layout .content {
     height: 100%; }
 
 @media handheld, (max-width: 700px), (max-device-width: 900px) {
   .layout {
     height: auto; }
-    .layout nav {
+    .layout #nav-wrap {
       max-width: none;
       top: 0;
       width: 100%;
       height: auto;
-      text-align: center;
-      border-bottom: solid 1px #ccc; }
-      .layout nav div {
+      text-align: center; }
+      .layout #nav-wrap nav {
         margin-left: 0; }
-      .layout nav .name {
-        margin-bottom: 2em; }
-      .layout nav .contact {
-        margin-top: 2em;
-        margin-bottom: 2em;
-        position: relative;
-        bottom: auto; }
+        .layout #nav-wrap nav .contact {
+          margin-top: 3em;
+          position: relative;
+          bottom: auto; }
     .layout .content {
       height: auto;
       background-color: #ccc; } }
