@@ -82,7 +82,12 @@ a {
 			width: 80%;
 			max-width: 35em;
 
+			.buffer {
+				height: 1em;
+			}
+
 			h1 {
+				margin-top: 0;
 				font-size: 1.5em;
 			}
 
@@ -139,7 +144,7 @@ a {
 
 			.content {
 				text-align: center;
-				margin: 2em auto;
+				margin: 1em auto;
 				width: 90%;
 			}
 

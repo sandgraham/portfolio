@@ -56,7 +56,10 @@ a {
       margin-left: 10%;
       width: 80%;
       max-width: 35em; }
+      .layout .content-wrap .content .buffer {
+        height: 1em; }
       .layout .content-wrap .content h1 {
+        margin-top: 0;
         font-size: 1.5em; }
       .layout .content-wrap .content .copy {
         text-align: justify;
@@ -89,7 +92,7 @@ a {
       min-width: 0; }
       .layout .content-wrap .content {
         text-align: center;
-        margin: 2em auto;
+        margin: 1em auto;
         width: 90%; }
       .layout .content-wrap h1 {
         font-size: 1.3em; }
