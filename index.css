@@ -52,21 +52,17 @@ a {
     min-width: 400px; }
     .layout .content-wrap .content {
       display: none;
-      height: 10em; }
-    .layout .content-wrap #main-content {
-      background-color: pink; }
-    .layout .content-wrap #wb-content {
-      background-color: red; }
-    .layout .content-wrap #gl-content {
-      background-color: blue; }
-    .layout .content-wrap #fa-content {
-      background-color: green; }
-    .layout .content-wrap #ck12-content {
-      background-color: orange; }
-    .layout .content-wrap #rm-content {
-      background-color: purple; }
-    .layout .content-wrap #about-content {
-      background-color: yellow; }
+      text-align: right;
+      margin-left: 10%;
+      width: 80%;
+      max-width: 35em; }
+      .layout .content-wrap .content h1 {
+        font-size: 1.5em; }
+      .layout .content-wrap .content .copy {
+        text-align: justify;
+        text-indent: 2em; }
+      .layout .content-wrap .content a {
+        color: #777; }
 
 @media handheld, (max-width: 700px), (max-device-width: 900px) {
   .layout {
@@ -77,7 +73,8 @@ a {
       top: 0;
       width: 100%;
       height: auto;
-      text-align: center; }
+      text-align: center;
+      border-bottom: solid 1px #ddd; }
       .layout #nav-wrap nav {
         margin-left: 0; }
         .layout #nav-wrap nav ul ul {
@@ -89,4 +86,13 @@ a {
           margin-bottom: 2em; }
     .layout .content-wrap {
       margin-left: 0;
-      min-width: 0; } }
+      min-width: 0; }
+      .layout .content-wrap .content {
+        text-align: center;
+        margin: 2em auto;
+        width: 90%; }
+      .layout .content-wrap h1 {
+        font-size: 1.3em; }
+      .layout .content-wrap a {
+        float: right;
+        margin-bottom: 1em; } }

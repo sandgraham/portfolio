@@ -77,35 +77,23 @@ a {
 
 		.content {
 			display: none;
-			height: 10em;
-		}
+			text-align: right;
+			margin-left: 10%;
+			width: 80%;
+			max-width: 35em;
 
-		#main-content {
-			background-color: pink;
-		}
+			h1 {
+				font-size: 1.5em;
+			}
 
-		#wb-content {
-			background-color: red;
-		}
+			.copy {
+				text-align: justify;
+				text-indent: 2em;
+			}
 
-		#gl-content {
-			background-color: blue;
-		}
-
-		#fa-content {
-			background-color: green;
-		}
-
-		#ck12-content {
-			background-color: orange;
-		}
-
-		#rm-content {
-			background-color: purple;
-		}
-
-		#about-content {
-			background-color: yellow;
+			a {
+				color: #777;
+			}
 		}
 	}
 
@@ -124,6 +112,7 @@ a {
 			width: 100%;
 			height: auto;
 			text-align: center;
+			border-bottom: solid 1px #ddd;
 
 			nav {
 				margin-left: 0;
@@ -147,6 +136,21 @@ a {
 		.content-wrap {
 			margin-left: 0;
 			min-width: 0;
+
+			.content {
+				text-align: center;
+				margin: 2em auto;
+				width: 90%;
+			}
+
+			h1 {
+				font-size: 1.3em;
+			}
+
+			a {
+				float: right;
+				margin-bottom: 1em;
+			}
 		}
 
 	}
