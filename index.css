@@ -112,7 +112,10 @@ a {
         width: 90%; }
         .layout .content-wrap .content .buffer {
           height: 1em; }
-        .layout .content-wrap .content svg {
+      .layout .content-wrap #main-content {
+        min-height: 27em; }
+        .layout .content-wrap #main-content svg {
+          position: fixed;
           z-index: 0; }
       .layout .content-wrap h1 {
         font-size: 1.3em; }

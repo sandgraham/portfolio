@@ -170,8 +170,13 @@ a {
 				.buffer {
 					height: 1em;
 				}
+			}
+
+			#main-content {
+				min-height: 27em;
 
 				svg {
+					position: fixed;
 					z-index: 0;
 				}
 			}
