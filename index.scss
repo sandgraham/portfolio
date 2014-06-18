@@ -120,6 +120,12 @@ a {
 		}
 	}
 
+	#about-content {
+		.copy {
+			margin-bottom: 2em;
+		}
+	}
+
 }
 
 @media handheld, (max-width: $break), (max-device-width: $device-width) {

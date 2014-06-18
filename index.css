@@ -80,6 +80,8 @@ a {
         text-indent: 2em; }
       .layout .content-wrap .content a {
         color: #777; }
+  .layout #about-content .copy {
+    margin-bottom: 2em; }
 
 @media handheld, (max-width: 700px), (max-device-width: 900px) {
   .layout {
