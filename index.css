@@ -58,6 +58,10 @@ a {
       margin-left: 10%;
       width: 80%;
       max-width: 35em; }
+      .layout .content-wrap .content p.skills {
+        font-style: italic;
+        color: #777;
+      }
       .layout .content-wrap .content .buffer {
         height: 2.9em; }
       .layout .content-wrap .content svg {
@@ -81,7 +85,8 @@ a {
       .layout .content-wrap .content a {
         color: #777; }
   .layout #about-content .copy {
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    text-align: right; }
 
 @media handheld, (max-width: 700px), (max-device-width: 900px) {
   .layout {
