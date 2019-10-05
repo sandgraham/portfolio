@@ -91,4 +91,13 @@ a {
 
 .main {
   flex-grow: 1;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  font-size: 50vh;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
