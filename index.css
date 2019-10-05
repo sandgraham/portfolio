@@ -24,6 +24,8 @@ a {
 }
 
 .nav {
+  position: fixed;
+  height: 100vh;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -94,10 +96,12 @@ a {
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
-  font-size: 50vh;
+  font-size: 100px;
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1;
   display: flex;
   align-items: center;
+  color: salmon;
+  padding-left: 200px;
 }
