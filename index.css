@@ -37,7 +37,7 @@ a {
 }
 
 .nav__header {
-  color: #AAA;
+  color: #aaa;
 }
 
 .nav__link {
@@ -45,38 +45,38 @@ a {
 }
 
 .nav__link:hover:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -30px;
   top: -2px;
 }
 
 .nav__link--doodles:hover:before {
-  content: '🎨'
+  content: "🎨";
 }
 
 .nav__link--code:hover:before {
-  content: '🤖'
+  content: "🤖";
 }
 
 .nav__link--words:hover:before {
-  content: '🖋'
+  content: "🖋";
 }
 
 .nav__link--uber:hover:before {
-  content: '🚕';
+  content: "🚕";
 }
 
 .nav__link--plangrid:hover:before {
-  content: '🔨'
+  content: "🔨";
 }
 
 .nav__link--scalefunder:hover:before {
-  content: '🎢';
+  content: "🎢";
 }
 
 .nav__link--ck12:hover:before {
-  content: '📚'
+  content: "📚";
 }
 
 .nav__github {
@@ -93,15 +93,34 @@ a {
 
 .main {
   flex-grow: 1;
+  padding-left: 200px;
+  font-family: Baskerville, Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+.main--splash {
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
   font-size: 100px;
   font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1;
   display: flex;
   align-items: center;
   color: salmon;
-  padding-left: 200px;
+}
+
+.project-description {
+  width: 500px;
+}
+
+.project-description a {
+  color: salmon;
+}
+
+.project-description a:hover,
+.project-description a:focus {
+  background: salmon;
+  color: white;
+  outline: none;
 }
